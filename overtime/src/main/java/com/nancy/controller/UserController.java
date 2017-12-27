@@ -22,6 +22,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
     @ResponseBody
     @RequestMapping(value = "/selectById", produces = {"application/json;charset=UTF-8"})
     public ResultDto selectById(Integer id){
